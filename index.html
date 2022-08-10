@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <ttle></ttle>
+        <link rel="stylesheet" href="./style/index.css">
+        <script src="./js/index.js" ></script>
+    </head>
+    <body>
+        <div class="box">
+            <button class="btn" id="b1" onclick="my1()">Login</button><button class="btn" id="b2" onclick="my2()">SignUp</button>
+            <form action="login.php" method="post" id="form1">
+                <div class="container">
+                    <div class="container2">
+                        <label for="username">Username :</label>
+                        <label for="password">Password :</label>
+                    </div>
+                    <div class="container2">
+                        <input type="text" name="username" id="username">
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+                <button type="submit" class="btn2">Login</button>
+            </form>
+            <form action="register.php" method="post" id="form2">
+                <div class="container" style="margin-top: 30px;">
+                    <div class="container2">
+                        <label for="username">Username :</label>
+                        <label for="fname">Fullname :</label>
+                        <label for="password">Password :</label>
+                        <label for="email">Email :</label>
+                    </div>
+                    <div class="container2">
+                        <input type="text" name="username" id="username">
+                        <input type="text" name="fname" id="fname">
+                        <input type="password" name="password" id="password">
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <button type="submit" class="btn2">SignUp</button>
+            </form>
+        </div>
+    </body>
+</html>
