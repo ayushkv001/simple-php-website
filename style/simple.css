@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    /* background: #222; */
+}
+
+button{
+    font-size: 15px;
+    font-weight: bold;
+    border-color: white;
+    width: 100px;
+    height: 25px;
+    background-color: aqua;
+}

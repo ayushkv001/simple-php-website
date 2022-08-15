@@ -1,5 +1,5 @@
 <?php 
-require_once('./sql.php');
+require_once('./sql_register.php');
 $username = $_POST["username"];
 $password = $_POST["password"];
 $fname = $_POST["fname"];
@@ -7,11 +7,11 @@ $email = $_POST["email"];
 
 $sql = "INSERT INTO users(username,fname,password,email) VALUES ('$username','$fname','$password','$email');";
 $response = sql($sql);
-if($response == NULL)
+if($response == FALSE)
 {
-    echo "NOT REGISTERED";
+    include './html/error_registered.html';
 }
 else{
-    echo "registered";
+    include './html/registered.html';
 }
 ?>

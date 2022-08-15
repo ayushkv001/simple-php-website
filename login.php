@@ -7,7 +7,7 @@ $sql = "SELECT username,password FROM users WHERE username='$username'";
 $response = sql($sql);
 if($response == NULL)
 {
-    echo "wrong username";
+    include './html/error_login.html';
 }
 else{
     if($password==$response[1])
@@ -15,7 +15,7 @@ else{
         echo "USER LOGGED IN";
     }
     else{
-        echo "WRONG PASSWORD";
+        include './html/error_login.html';
     }
 }
 ?>

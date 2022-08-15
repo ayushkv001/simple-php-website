@@ -10,8 +10,7 @@
          echo $db->lastErrorMsg();
       } 
       $response = $db->query($sql);
-      $row = $response->fetchArray();
       $db->close();
-      return $row;
+      return $response;
    }
 ?>
