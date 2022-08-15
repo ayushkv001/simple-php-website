@@ -2,4 +2,7 @@
 /other_files
 /photo_files
 
+/other_unrelated_files
+
+
 *.db
