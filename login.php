@@ -12,7 +12,7 @@ if($response == NULL)
 else{
     if($password==$response[1])
     {
-        echo "USER LOGGED IN";
+        include './html/login.html';
     }
     else{
         include './html/error_login.html';
